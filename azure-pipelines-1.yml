@@ -11,13 +11,13 @@ variables:
   azureServiceConnectionId: '6d1e4c42-b147-4a6c-ac3f-6152144a168c'
 
   # Web app name
-  webAppName: 'flask-sklearn-urvesh2'
+  webAppName: 'flask-sklearn-urvesh3'
 
   # Agent VM image name
   vmImageName: 'myAgentPool'
 
   # Environment name
-  environmentName: 'flask-sklearn-urvesh2'
+  environmentName: 'flask-sklearn-urvesh3'
   
   # Pool Name
   pool: 'myAgentPool'
