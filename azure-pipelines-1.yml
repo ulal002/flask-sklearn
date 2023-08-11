@@ -6,11 +6,12 @@
 trigger:
 - main
 
-pool: myAgentPool
-
 variables:
   # Azure Resource Manager connection created during pipeline creation
   azureServiceConnectionId: 'myServiceConnection'
+
+  # pool name
+  pool: 'myAgentPool'
 
   # Web app name
   webAppName: 'flask-sklearn-urvesh2'
@@ -32,7 +33,7 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool:
+    pool: $(pool)
       vmImage: $(vmImageName)
     steps:
     - task: UsePythonVersion@0
@@ -68,7 +69,7 @@ stages:
   condition: succeeded()
   jobs:
   - deployment: DeploymentJob
-    pool:
+    pool: $(pool)
       vmImage: $(vmImageName)
     environment: $(environmentName)
     strategy:
