@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: 'e438565a-7d47-4d67-85e9-5ca173cf8407'
+  azureServiceConnectionId: '6d1e4c42-b147-4a6c-ac3f-6152144a168c'
 
   # Web app name
   webAppName: 'flask-sklearn-urvesh2'
