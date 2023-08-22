@@ -3,8 +3,6 @@ setup:
 
 install:
 	pip install --upgrade pip &&\
-		pip install -r wheel
-		pip install -r pandas
 		pip install -r requirements.txt
 
 test:
