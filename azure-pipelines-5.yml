@@ -10,23 +10,23 @@ variables:
   # Azure Resource Manager connection created during pipeline creation
   azureServiceConnectionId: '6d1e4c42-b147-4a6c-ac3f-6152144a168c'
 
- # Web app name
-webAppName: 'flask-sklearn-urvesh11'
+  # Web app name
+  webAppName: 'flask-sklearn-urvesh11'
 
- # Agent VM image name
-vmImageName: 'myAgentPool'
+  # Agent VM image name
+  vmImageName: 'myAgentPool'
 
- # Pool Name
-pool: 'myAgentPool'
+  # Pool Name
+  pool: 'myAgentPool'
 
- # Environment name
-environmentName: 'flask-sklearn-urvesh11'
+  # Environment name
+  environmentName: 'flask-sklearn-urvesh11'
 
- # Project root folder. Point to the folder containing manage.py file.
-projectRoot: $(System.DefaultWorkingDirectory)
+  # Project root folder. Point to the folder containing manage.py file.
+  projectRoot: $(System.DefaultWorkingDirectory)
 
- # Python version: 3.8
-pythonVersion: '3.8'
+  # Python version: 3.8
+  pythonVersion: '3.8'
 
 stages:
 - stage: Build
