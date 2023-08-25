@@ -25,5 +25,5 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST https://flask-sklearn-urvesh10.azurewebsites.net:$PORT/predict 
-     #your application name flask-sklearn-urvesh3 goes here
+     -X POST https://flask-sklearn-urvesh11.azurewebsites.net:$PORT/predict 
+     #your application name flask-sklearn-urvesh11 goes here
