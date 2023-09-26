@@ -11,7 +11,7 @@ variables:
   azureServiceConnectionId: '6d1e4c42-b147-4a6c-ac3f-6152144a168c'
 
   # Web app name
-  webAppName: 'flask-sklearn-urvesh11'
+  webAppName: 'flask-sklearn-urvesh5'
 
   # Agent VM image name
   vmImageName: 'myAgentPool'
@@ -20,7 +20,7 @@ variables:
   pool: 'myAgentPool'
 
   # Environment name
-  environmentName: 'flask-sklearn-urvesh11'
+  environmentName: 'flask-sklearn-urvesh5'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
@@ -35,8 +35,19 @@ stages:
   - job: BuildJob
     pool: $(pool)
     steps:
-    - script: oryx build $(projectRoot) --platform python --language-version $(pythonVersion)
-      displayName: 'Build using Oryx'
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '$(pythonVersion)'
+      displayName: 'Use Python $(pythonVersion)'
+
+    - script: |
+        python -m venv antenv
+        source antenv/bin/activate
+        python -m pip install --upgrade pip
+        pip install setup
+        pip install -r requirements.txt
+      workingDirectory: $(projectRoot)
+      displayName: "Install requirements"
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
@@ -64,8 +75,13 @@ stages:
         deploy:
           steps:
 
+          - task: UsePythonVersion@0
+            inputs:
+              versionSpec: '$(pythonVersion)'
+            displayName: 'Use Python version'
+
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : $(webAppName)'
+            displayName: 'Deploy Azure Web App : flask-sklearn-urvesh5'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
