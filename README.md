@@ -6,24 +6,12 @@ Complete this with an overview of your project
 Project Plan:
 
 https://trello.com/b/x8ntfsSG/udacity-p2
+https://docs.google.com/spreadsheets/d/1OcLkfI1BqUgF8J7r9RMjfLDpiLTBVrNE/edit?pli=1#gid=2043844398
 
 ## Instructions
 
-+------------------------+    +------------------------+   +------------------------+   +------------------------+
-|   GitHub Repository    |    | Azure DevOps Pipeline  |   | Azure DevOps Agent     |   | Azure App Service       |
-|                        |    |                        |   |   (Agent Pool)         |   |                        |
-|   +--------------+     |    |   +--------------+     |   |                        |   |   +--------------+     |
-|   |  app.py      |     |    |   |   Build      |     |   |                        |   |   |   Web App    |     |
-|   |  Makefile    |     |    |   |   Pipeline   |     |   |                        |   |   |   (Python)   |     |
-|   |  requirements|     |    |   |   (YAML)     |     |   |                        |   |   |   Hosting    |     |
-|   |  .txt        |     |    |   +--------------+     |   |                        |   |   |   Environment|     |
-|   +--------------+     |    |                        |   |                        |   |   +--------------+     |
-+------------------------+    |   +--------------+     |   |                        |   +------------------------+
-                              |   |   Release    |     |   |                        |
-                              |   |   Pipeline   |     |   |                        |
-                              |   |   (YAML)     |     |   |                        |
-                              |   +--------------+     |   |                        |
-                              +------------------------+   +------------------------+
+![Uploading image.png…]()
+
 
 ## Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
