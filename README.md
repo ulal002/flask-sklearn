@@ -68,9 +68,16 @@ Step 11: Run the Prediction Script
 * Running Azure App Service from Azure Pipelines automatic deployment
 ![image](https://github.com/ulal002/flask-sklearn/assets/139964364/2c24b716-d33a-4265-b4a0-1016c5ba5755)
 
+## Project review from here
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-![image](https://github.com/ulal002/flask-sklearn/assets/139964364/c033e5a3-0b1b-4c96-990e-c3621c4f29a8)
+![Uploading image.png…]()
 
+## Predictions for the flask application (make_predict_azure_app.sh)
+Please see screen recording in this link https://drive.google.com/file/d/1wf_fuD88Huz1NWnus-g2nV7oEEH4uOU5/view?usp=sharing
+
+## Locust demonstration
+Below is a screenshot of the Locustfile.py demo. You may also find the demo in a video format here https://drive.google.com/file/d/12JUsgEiFVscRBcAB0EDbaOdjZsB1EjJg/view?usp=sharing
+![Uploading image.png…]()
 
 
 ## Enhancements
